@@ -1,7 +1,7 @@
 export const debounce = (func, wait, immediate) => {
   let timeout;
   /* eslint-disable func-names */
-  return function() {
+  return function () {
     /* eslint-enable func-names */
     const context = this;
     const args = arguments; // eslint-disable-line prefer-rest-params
@@ -15,3 +15,4 @@ export const debounce = (func, wait, immediate) => {
     if (callNow) func.apply(context, args);
   };
 };
+// jade
